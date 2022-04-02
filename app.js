@@ -1,3 +1,11 @@
+/*
+ * @Date: 2018-01-25 00:54:00
+ * @Author: Yao guan shou
+ * @LastEditors: Yao guan shou
+ * @LastEditTime: 2022-03-10 10:57:12
+ * @FilePath: /quill-sharedb-cursors/app.js
+ * @Description: 
+ */
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -25,8 +33,12 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'node_modules/quill/dist')));
-app.use(express.static(path.join(__dirname, 'node_modules/quill-cursors/dist')));
+// app.use(express.static(path.join(__dirname, 'node_modules/quill/dist')));
+// app.use(express.static(path.join(__dirname, 'node_modules/quill-cursors/dist')));
+
+app.use(express.static(path.join(__dirname, './component/quill')));
+app.use(express.static(path.join(__dirname, './component/quill-cursors')));
+
 
 app.use(require('./controllers'));
 

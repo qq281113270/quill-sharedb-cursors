@@ -1,7 +1,7 @@
-var WebSocket = require('ws');
+var WebSocket = require('./../component/ws');
 var _ = require('lodash');
 var uuid = require('uuid');
-var debug = require('debug')('quill-sharedb-cursors:cursors');
+var debug = require('debug')('./../component/quill-sharedb-cursors:cursors');
 
 module.exports = function(server) {
 

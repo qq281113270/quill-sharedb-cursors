@@ -1,12 +1,13 @@
-var ShareDB = require('sharedb/lib/client');
-var Quill = require('quill');
+//文档 
+var ShareDB = require('../../component/sharedb/lib/client');
+var Quill = require('../../component/quill');
 var ReconnectingWebSocket = require('reconnectingwebsocket');
 var cursors = require('./cursors' );
 var utils = require('./utils');
 
-import QuillCursors from 'quill-cursors/src/cursors';
+import QuillCursors from '../../component/quill-cursors/src/cursors';
 
-ShareDB.types.register(require('rich-text').type);
+ShareDB.types.register(require('../../component/rich-text').type);
 
 Quill.register('modules/cursors', QuillCursors);
 

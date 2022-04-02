@@ -1,4 +1,4 @@
-var ReconnectingWebSocket = require('reconnectingwebsocket');
+var ReconnectingWebSocket = require('../../component/reconnectingwebsocket');
 
 var cursors = {};
 

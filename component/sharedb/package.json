@@ -1,0 +1,78 @@
+{
+  "_from": "sharedb@^2.2.5",
+  "_id": "sharedb@2.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-uCy8Npx8Azf21PmNUGqfIKRbnisH2U+N9Z0CJILWq23+HqcWRAA5n35m/dMm4ZuTQalYeWlR2/kaV8Wm0nXr3g==",
+  "_location": "/sharedb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "sharedb@^2.2.5",
+    "name": "sharedb",
+    "escapedName": "sharedb",
+    "rawSpec": "^2.2.5",
+    "saveSpec": null,
+    "fetchSpec": "^2.2.5"
+  },
+  "_requiredBy": [
+    "/",
+    "/sharedb-mongo"
+  ],
+  "_resolved": "https://registry.npmjs.org/sharedb/-/sharedb-2.2.5.tgz",
+  "_shasum": "8f6e0b4db86a89c226ebb09e0c98dcec4116f467",
+  "_spec": "sharedb@^2.2.5",
+  "_where": "/Users/admin/Documents/code/quill-sharedb-cursors-master",
+  "author": {
+    "name": "Nate Smith and Joseph Gentle"
+  },
+  "bugs": {
+    "url": "https://github.com/share/sharedb/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "arraydiff": "^0.1.1",
+    "async": "^2.6.3",
+    "fast-deep-equal": "^2.0.1",
+    "hat": "0.0.3",
+    "ot-json0": "^1.0.1"
+  },
+  "deprecated": false,
+  "description": "JSON OT database backend",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.7",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "lolex": "^5.1.1",
+    "mocha": "^8.2.1",
+    "nyc": "^14.1.1",
+    "ot-json0-v2": "github:ottypes/json0",
+    "ot-json1": "^0.3.0",
+    "rich-text": "^4.1.0",
+    "sharedb-legacy": "npm:sharedb@=1.1.0",
+    "sinon": "^7.5.0"
+  },
+  "files": [
+    "lib/",
+    "test/"
+  ],
+  "homepage": "https://github.com/share/sharedb#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "sharedb",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/share/sharedb.git"
+  },
+  "scripts": {
+    "docs:build": "cd docs && bundle exec jekyll build",
+    "docs:install": "cd docs && bundle install",
+    "docs:start": "cd docs && bundle exec jekyll serve --livereload",
+    "lint": "eslint --ignore-path .gitignore '**/*.js'",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha",
+    "test-cover": "nyc --temp-dir=coverage -r text -r lcov npm test"
+  },
+  "version": "2.2.5"
+}
